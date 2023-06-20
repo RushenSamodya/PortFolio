@@ -6,18 +6,13 @@ import LinkedInImage from "../assets/LinkedIn.png";
 import TwitterImage from "../assets/Twitter.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Hompage = () => {
   return (
     <>
       <Navbar />
-      <Box
-        color="white"
-        fontWeight="light"
-        height="80vh"
-        width="100vw"
-        id="home"
-      >
+      <Box color="white" fontWeight="light" height="85vh" width="100vw">
         <Box
           display="flex"
           justifyContent="center"
@@ -39,14 +34,16 @@ const Hompage = () => {
           <Text>Aspiring undergraduate passionate </Text>
           <Text>about building user-friendly web solutions</Text>
           <Box padding="4rem">
-            <Button
-              borderRadius="50px"
-              colorScheme="white"
-              variant="outline"
-              size="lg"
-            >
-              Contact me
-            </Button>
+            <Link to="#contactme" smooth>
+              <Button
+                borderRadius="50px"
+                colorScheme="white"
+                variant="outline"
+                size="lg"
+              >
+                Contact me
+              </Button>
+            </Link>
           </Box>
         </Box>
 
@@ -69,11 +66,13 @@ const Hompage = () => {
           alignItems="center"
           paddingTop="3rem"
         >
-          <FontAwesomeIcon
-            icon={faChevronDown}
-            bounce
-            style={{ color: "#ffffff" }}
-          />
+          <Link to="#about" smooth>
+            <FontAwesomeIcon
+              icon={faChevronDown}
+              bounce
+              style={{ color: "#ffffff" }}
+            />
+          </Link>
         </Box>
       </Box>
     </>
