@@ -45,7 +45,7 @@ const Navbar = () => {
             </Flex>
 
             <Box display="flex" fontSize="18px" gap="1rem" cursor="pointer">
-              <Icon marginRight="8px">
+              {/* <Icon marginRight="8px">
                 <SearchIcon />
               </Icon>
               <Icon
@@ -54,7 +54,7 @@ const Navbar = () => {
                 transition="color 0.3s ease-in-out"
               >
                 {!darkMode ? <SunIcon /> : <MoonIcon />}
-              </Icon>
+              </Icon> */}
             </Box>
           </Flex>
         </Box>
@@ -71,12 +71,12 @@ const Navbar = () => {
           </Box>
 
           <Box>
-            <Icon marginRight="20px">
+            {/* <Icon marginRight="20px">
               <SearchIcon />
             </Icon>
             <Icon marginRight="8px" onClick={() => setDarkMode(!darkMode)}>
               {!darkMode ? <SunIcon /> : <MoonIcon />}
-            </Icon>
+            </Icon> */}
 
             <Hamburger />
           </Box>
