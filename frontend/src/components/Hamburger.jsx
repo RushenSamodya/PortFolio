@@ -1,4 +1,3 @@
-import { Box } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 import { IconButton } from "@chakra-ui/react";
@@ -9,6 +8,7 @@ import {
   faBookOpen,
   faFileCode,
   faBlog,
+  faAddressBook,
 } from "@fortawesome/free-solid-svg-icons";
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -73,6 +73,18 @@ const Hamburger = () => {
             }
           >
             Blog
+          </MenuItem>
+        </Link>
+        <Link to="#contactme" smooth>
+          <MenuItem
+            icon={
+              <FontAwesomeIcon
+                icon={faAddressBook}
+                style={{ color: "#000000" }}
+              />
+            }
+          >
+            Contact Me
           </MenuItem>
         </Link>
       </MenuList>

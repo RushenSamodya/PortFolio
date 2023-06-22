@@ -1,16 +1,6 @@
 import { Box, Flex, Icon, Text } from "@chakra-ui/react";
-import { SearchIcon, SunIcon, HamburgerIcon, MoonIcon } from "@chakra-ui/icons";
+import { SearchIcon, SunIcon, MoonIcon } from "@chakra-ui/icons";
 import { useMediaQuery } from "@chakra-ui/react";
-import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
-import { IconButton } from "@chakra-ui/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHouse,
-  faAddressCard,
-  faBookOpen,
-  faFileCode,
-  faBlog,
-} from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import Hamburger from "./Hamburger";
@@ -22,10 +12,10 @@ const Navbar = () => {
   return (
     <>
       {isLargerThan375 ? (
-        <Box>
+        <Box id="home">
           <Flex
             color="white"
-            padding="30px"
+            padding="2rem"
             justify="space-around"
             align="center"
             gap="15rem"
@@ -55,7 +45,7 @@ const Navbar = () => {
             </Flex>
 
             <Box display="flex" fontSize="18px" gap="1rem" cursor="pointer">
-              <Icon marginRight="8px">
+              {/* <Icon marginRight="8px">
                 <SearchIcon />
               </Icon>
               <Icon
@@ -64,7 +54,7 @@ const Navbar = () => {
                 transition="color 0.3s ease-in-out"
               >
                 {!darkMode ? <SunIcon /> : <MoonIcon />}
-              </Icon>
+              </Icon> */}
             </Box>
           </Flex>
         </Box>
@@ -74,21 +64,21 @@ const Navbar = () => {
           padding="30px"
           justify="space-between"
           align="center"
+          id="home"
         >
           <Box>
             <Text fontSize="24px">rushen</Text>
           </Box>
 
           <Box>
-            <Icon marginRight="20px">
+            {/* <Icon marginRight="20px">
               <SearchIcon />
             </Icon>
             <Icon marginRight="8px" onClick={() => setDarkMode(!darkMode)}>
               {!darkMode ? <SunIcon /> : <MoonIcon />}
-            </Icon>
-            
-              <Hamburger />
-        
+            </Icon> */}
+
+            <Hamburger />
           </Box>
         </Flex>
       )}
