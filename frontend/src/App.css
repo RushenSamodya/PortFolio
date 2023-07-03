@@ -2,7 +2,7 @@
   height: 100vh;
   font-family: "Poppins", sans-serif;
   /* background: url("http://res.cloudinary.com/djvljpcro/image/upload/v1688372756/tqc0hg2tcthtuadicra0.png"); */
-  background: #1e1e1e;
+  background: url("http://res.cloudinary.com/djvljpcro/image/upload/v1688372756/tqc0hg2tcthtuadicra0.png");
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
