@@ -39,7 +39,11 @@ const Navbar = () => {
               <Link to="#projects" smooth>
                 <Text cursor="pointer">Projects</Text>
               </Link>
-              <Link to="#blog" smooth>
+              <Link
+                to="https://medium.com/@rushenssamodya"
+                smooth
+                target="_blank"
+              >
                 <Text cursor="pointer">Blog</Text>
               </Link>
             </Flex>
